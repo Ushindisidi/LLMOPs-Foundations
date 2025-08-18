@@ -1,0 +1,14 @@
+2025-08-18 11:49:23,869 - INFO - Starting log file processing...
+2025-08-18 11:49:23,923 - INFO - Processed line. Latency: 54.00ms | PII: False | Error: False
+2025-08-18 11:49:23,975 - INFO - Processed line. Latency: 52.00ms | PII: False | Error: False
+2025-08-18 11:49:24,026 - INFO - Processed line. Latency: 50.97ms | PII: False | Error: False
+2025-08-18 11:49:24,078 - WARNING - PII Detected! Log entry: INFO: Response: "Please contact our support team at myemail@example.com."
+2025-08-18 11:49:24,078 - INFO - Processed line. Latency: 51.26ms | PII: True | Error: False
+2025-08-18 11:49:24,129 - INFO - Processed line. Latency: 51.35ms | PII: False | Error: False
+2025-08-18 11:49:24,180 - WARNING - PII Detected! Log entry: INFO: Response: "For more assistance, call 555-123-4567."
+2025-08-18 11:49:24,180 - INFO - Processed line. Latency: 51.00ms | PII: True | Error: False
+2025-08-18 11:49:24,233 - ERROR - Error Detected! Log entry: ERROR: Failed to generate a response due to an internal server error.
+2025-08-18 11:49:24,233 - INFO - Processed line. Latency: 53.00ms | PII: False | Error: True
+2025-08-18 11:49:24,284 - INFO - Processed line. Latency: 51.00ms | PII: False | Error: False
+2025-08-18 11:49:24,335 - INFO - Processed line. Latency: 51.10ms | PII: False | Error: False
+2025-08-18 11:49:24,335 - INFO - Log file processing complete.

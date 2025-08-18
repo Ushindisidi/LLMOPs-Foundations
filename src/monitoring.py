@@ -2,9 +2,11 @@ import re
 import time
 import logging
 
-# Configure logging for clear output
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+# Setup logging to output to a file
 
+logging.basicConfig(filename="chatbot.log",
+                    level=logging.INFO,
+                    format="%(asctime)s - %(levelname)s - %(message)s")
 def detect_pii(text):
     """Detects personally identifiable information (PII) like emails and phone numbers."""
     email_pattern = r'[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}'
