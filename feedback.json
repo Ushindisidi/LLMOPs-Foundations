@@ -1,0 +1,20 @@
+[
+    {
+        "timestamp": "2025-08-18T08:08:15.512876+00:00",
+        "user_id": "0001",
+        "feedback_type": "feature_request",
+        "description": "Please add a feature to let the bot check order status by order number."
+    },
+    {
+        "timestamp": "2025-08-18T08:09:46.756197+00:00",
+        "user_id": "0003",
+        "feedback_type": "bug_request",
+        "description": "Bot gave wrong answer to refund request."
+    },
+    {
+        "timestamp": "2025-08-18T08:10:19.578353+00:00",
+        "user_id": "0004",
+        "feedback_type": "gneral_comment",
+        "description": "The chatbot is very fast and helpful! Great job."
+    }
+]
