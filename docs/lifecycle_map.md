@@ -2,6 +2,10 @@
 
 ## Lifecycle Map
 
+# LLMOps Lifecycle for the Chatbot Project
+
+## Lifecycle Map
+
 Below is a visual representation of the foundational LLMOps lifecycle for our customer-facing chatbot.
 
 ```mermaid
@@ -22,14 +26,6 @@ graph TD
 
     F --> G[Improvement];
     G --> B;
-
-    style A fill:#f9f,stroke:#333,stroke-width:2px
-    style C fill:#9f9,stroke:#333,stroke-width:2px
-    style D fill:#f9f,stroke:#333,stroke-width:2px
-    style E fill:#fff,stroke:#333,stroke-width:2px
-    style F fill:#9f9,stroke:#333,stroke-width:2px
-    style G fill:#fff,stroke:#333,stroke-width:2px
-
     
 1. Development
 Purpose: This is where the core work of building and refining the chatbot model happens. It includes coding the application logic and preparing data for model fine-tuning or prompt engineering.
