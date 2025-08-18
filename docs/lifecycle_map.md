@@ -5,62 +5,50 @@ The diagram below is written in **Mermaid.js** for easy rendering in Markdown.
 
 ---
 
-## 🔄 Lifecycle Diagram
+## Lifecycle Map
+
+Below is a visual representation of the foundational LLMOps lifecycle for our customer-facing chatbot.
 
 ```mermaid
-flowchart TD
-    A[Deploy] --> B[Monitor]
-    B --> C[Evaluate]
-    C --> D[Version & Rollback]
-    D --> E[Feedback Collection]
-    E --> F[Continuous Improvement]
-    F --> B
+graph TD
+    A[Development: Code & Test] --> B[Data Prep & Tuning];
+    B --> C[Deployment: CI/CD];
+    C --> D[Operations: Monitoring & Logging];
+    D --> E[Evaluation & Feedback Loop];
+    E --> F[Versioning & Rollback];
+    F --> G[Improvement];
+    G --> B;
 
 Phase Explanations
-1. Deploy
+1. Development
+Purpose: This is where the core work of building and refining the chatbot model happens. It includes coding the application logic and preparing data for model fine-tuning or prompt engineering.
 
-The chatbot is released into production.
+Stakeholders: Primarily AI/ML Engineers and Data Scientists.
 
-Configurations use environment variables (e.g., API keys).
+2. Deployment
+Purpose: The process of taking the developed chatbot and making it available to end-users. This phase uses CI/CD pipelines to ensure a smooth, automated, and repeatable deployment.
 
-Stakeholders: Engineers, Cloud/DevOps team.
+Stakeholders: AI/ML Engineers, DevOps, and Cloud Infrastructure Teams.
 
-2. Monitor
+3. Monitoring & Logging
+Purpose: Continuously observing the live chatbot for performance issues, errors, and security risks. We track metrics like latency, error rates, and a critical task: flagging PII to prevent data leaks.
 
-Track latency, errors, and detect privacy risks (PII).
+Stakeholders: AI/ML Engineers, Product Managers, and Security/Compliance Teams.
 
-Logging ensures issues can be investigated.
+4. Evaluation & Feedback Loop
+Purpose: Analyzing chatbot performance based on monitoring data and user feedback. This phase is crucial for identifying areas for improvement, like wrong answers or confusing responses.
 
-Stakeholders: Engineers, Compliance team.
+Stakeholders: Product Managers, AI/ML Engineers, and User Support Teams.
 
-3. Evaluate
+5. Versioning & Rollback
+Purpose: Managing different versions of the chatbot and its underlying model. This ensures we can quickly revert to a stable, previously working version in case of a critical bug or "AI incident" in a new release.
 
-Review chatbot performance using metrics + sample queries.
+Stakeholders: AI/ML Engineers and DevOps Teams.
 
-Product Managers and QA assess quality vs. user expectations.
+6. Improvement
+Purpose: Acting on insights from evaluation and feedback. This could involve retraining the model, updating prompts, or making changes to the application logic to enhance performance, safety, or accuracy.
 
-Stakeholders: PMs, QA engineers, ML team.
+Stakeholders: AI/ML Engineers and Data Scientists.
 
-4. Version & Rollback
 
-All changes are versioned in GitHub.
 
-If a release causes incidents, rollback to stable branch.
-
-Stakeholders: Engineers, CTO.
-
-5. Feedback Collection
-
-Users or PMs submit feedback (bug reports, feature requests).
-
-Feedback stored in JSON/DB for future analysis.
-
-Stakeholders: End-users, PMs.
-
-6. Continuous Improvement
-
-Incorporate monitoring + feedback into model updates.
-
-Retrain, fine-tune, or adjust prompts/guardrails.
-
-Stakeholders: ML engineers, Product team.
