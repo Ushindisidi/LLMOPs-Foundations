@@ -7,3 +7,7 @@ INFO: Response: "For more assistance, call 555-123-4567."
 ERROR: Failed to generate a response due to an internal server error.
 INFO: Request received.
 INFO: Response: "The team will get back to you shortly."
+INFO: This is a test.
+INFO: Contact me at sidisidi@gmail.com
+INFO: You can also reach me at +254 456 7890.
+INFO: The product key is 1234567890.

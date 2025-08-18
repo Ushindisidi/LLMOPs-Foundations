@@ -62,3 +62,11 @@ Redeploy the application using the code from the stable branch. This immediately
 
 Investigate the bug on a separate feature branch, fix it, and merge the fix back into main after it has been thoroughly tested.
 
+## 🔒 Compliance and Privacy Checklist
+
+This project lays the groundwork for handling key compliance requirements, particularly related to PII and data privacy.
+
+-   **PII Detection:** We use a monitoring script with regex to automatically detect and flag sensitive data like emails and phone numbers. In a production system, this would trigger an alert and potential data redaction.
+-   **Data Retention:** A policy should be implemented to automatically purge old logs and feedback records to comply with regulations like GDPR.
+-   **Anonymization:** A future step would be to automatically anonymize or redact PII before it is logged to a persistent store.
+-   **Data Security:** While this demo uses a simple JSON file, a production system would require logs and feedback to be stored in a secure, encrypted, and access-controlled database.
