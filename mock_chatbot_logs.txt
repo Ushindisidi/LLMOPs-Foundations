@@ -1,0 +1,9 @@
+INFO: Request received.
+INFO: Response: "Hello! How can I help you today?"
+INFO: Request received.
+INFO: Response: "Please contact our support team at myemail@example.com."
+INFO: Request received.
+INFO: Response: "For more assistance, call 555-123-4567."
+ERROR: Failed to generate a response due to an internal server error.
+INFO: Request received.
+INFO: Response: "The team will get back to you shortly."
